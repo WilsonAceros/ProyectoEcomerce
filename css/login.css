@@ -1,120 +1,502 @@
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #333;
-    color: whitesmoke;
-    line-height: 1.4em;
+* {
     margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
 
-p{
-    margin-bottom: 1.6em;
+body {
+    background-color: #1e1e1e !important;
 }
 
-.container{
-    width: 85%;
-    max-width: 850px;
+.acercaDe {
+    border-bottom: 1px solid transparent !important;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    max-width: 100%;
+    line-height: 1.3em;
+}
+
+
+.titulo{
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    transition: all 0.4s ease;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.header {
+    color: whitesmoke;
+    max-width: 100%;
+    height: 400px;
+    background-image: url(/imgs/img3.jpg);
+    background-attachment: fixed;
+    background-position: 0 -250px;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.logoST {
+    position: relative;
+    width: 100%;
+    height: 95px;
+    size: cover;
+}
+
+.main {
+    height: 1400px;
+    width: 80%;
     margin: 0 auto;
+    margin-top: 30px;
+    color: antiquewhite;
 }
 
-.header{
-    background: black;
-    color: whitesmoke;
-    margin: 0;
-    padding: 2rem 0;
-
-    position: fixed;
+.sidebar {
+    position: absolute;
+    width: 220px;
     left: 0;
-    top: 0;
-    right: 0;
-    height: 50px;
+    height: 100%;
+    transform: translate(-520px);
+    transition: transform 1s;
+    z-index: 999;
 }
 
-.header a{
-    color: whitesmoke;
+.sidebar .textlogo {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: black;
+    letter-spacing: 1px;
+}
+
+.sidebar .textlogo a {
     text-decoration: none;
-    margin: 0;
+    list-style: none;
+    color: white;
 }
 
-
-.logo-nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.sidebar.show {
+    transform: translate(0px);
+    transition: transform 0.7s;
 }
 
-.logo{
-    letter-spacing: 15px;
-    font-size: 1.2em;
+nav ul {
+    background: #1e1e1e;
+    width: 100%;
+    list-style: none;
+    z-index: 999;
 }
 
-.menu-icon{
+nav ul .marcas-show.show {
+    display: block;
+}
+
+nav ul .cat-show.show {
+    display: block;
+}
+
+nav ul li {
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    background: #1e1e1e;
+    border-left: 6px solid cyan;
+}
+
+nav ul ul {
+    position: static;
     display: none;
 }
 
-.navigation ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+nav ul ul li {
+    line-height: 42px;
+    border-bottom: none;
 }
-    .navigation ul li{
-        display: inline-block;
-    }
-        .navigation ul li a{
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            transition: all 0.4s linear;
-            border-radius: 5px;
-        }
-            .navigation ul li a:hover{
-                background-color: rgba(255, 217, 0, 0.493);
-            }
-.main{
-    padding-top: 12rem;
+
+nav ul ul li a {
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 20px;
+    border-left: #1b1b1b !important;
+}
+
+nav ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.2s;
+}
+
+nav ul li a span.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.cat-show li{
+    display: inline-block;
+    /* width: 170px; */
 
 }
-.footer{
-    background: #575656;
-    padding: 4rem 0;
+
+
+
+/*----------------------------------------------------*/
+/*-------------------BOTON BURGUER--------------------*/
+/*----------------------------------------------------*/
+.menu-btn {
+    position: relative;
+    left: -20px;
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    background-attachment: fixed;
+}
+
+.menu-btn_burguer {
+    width: 30px;
+    height: 6px;
+    margin-top: 30%;
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px cyan;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn_burguer::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px cyan;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn_burguer::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px cyan;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn_burguer::before {
+    transform: translateY(-16px);
+}
+
+.menu-btn_burguer::after {
+    transform: translateY(16px);
+}
+
+/*-----------------ANIMACION BOTON BURGUER----------------*/
+.menu-btn.open {
+    transform: translateX(215px);
+}
+
+.menu-btn.open .menu-btn_burguer {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn_burguer::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    background: black;
+    margin-left: 2px;
+    margin-top: -10px;
+    width: 25px;
+    height: 5px;
+    border-radius: 2px;
+}
+
+.menu-btn.open .menu-btn_burguer::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    background: black;
+    margin-left: 2px;
+    margin-top: -10px;
+    width: 25px;
+    height: 5px;
+}
+
+img {
+    vertical-align: middle;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#img1 {
+    height: 550px !important;
+}
+
+.carousel-item p {
     text-align: center;
-    margin-top: 6rem;
-    color: black;
 }
 
-@media only screen and (max-width:767px){
+.footer {
+    background: #575656;
+    padding: 1rem 0;
+    /* margin-top: 1rem; */
+}
 
-    .menu-icon{
+.footer p {
+    text-align: center;
+    margin-top: 1rem;
+    color: whitesmoke;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------RESPONSIVE-------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width:767px) {
+    .header {
+        color: whitesmoke;
+        max-width: 100%;
+        height: 200px;
+        /* background-image: url(/imgs/clothes.jpg);
+        background-attachment: fixed;
+        background-position:center -125px;
+        background-size: cover;
+        overflow: hidden;
+        background-repeat: no-repeat; */
+    }
+
+    .logo {
+        letter-spacing: 25px;
+    }
+
+    /*-----------------------SIDERBAR--------------------*/
+    .sidebar {
+        position: absolute;
+        width: 150px;
+        left: 0;
+        height: 100%;
+        background-color: black;
+        transform: translate(-520px);
+        transition: transform 1s;
+        z-index: 999;
+    }
+
+    .sidebar .textlogo {
+        color: white;
+        font-size: 15px;
+        margin: auto;
+        font-weight: 600;
+        line-height: 50px;
+        text-align: center;
+        background: black;
+    }
+
+    .sidebar.show {
+        transform: translate(0px);
+        transition: transform 0.7s;
+    }
+
+    .sidebar .textlogo a {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        margin: 0 auto;
+        padding: auto;
+        letter-spacing: 0.8em;
+        text-align: center;
+    }
+
+    nav ul {
+        background: #1b1b1b;
+        height: 100%;
+        width: 100%;
+        list-style: none;
+    }
+
+    nav ul .marcas-show.show {
         display: block;
+    }
+
+    nav ul .cat-show.show {
+        display: block;
+    }
+
+    nav ul li {
+        line-height: 35px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    }
+
+    nav ul li a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        padding-left: 20px;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        border-left: 1.5px solid transparent;
+    }
+
+    nav ul li a:hover {
+        color: cyan;
+        background: #1e1e1e;
+        border-left: 3px solid cyan;
+    }
+
+    nav ul ul {
+        position: static;
+        display: none;
+    }
+
+    nav ul ul li {
+        line-height: 35px;
+        border-bottom: none;
+    }
+
+    nav ul ul li a {
+        font-size: 12px;
+        color: #e6e6e6;
+        padding-left: 10px;
+        border-left: #1b1b1b !important;
+    }
+
+    nav ul li a span {
+        /*--Flechas--*/
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 15px;
+        transition: transform 0.2s;
+    }
+
+    nav ul li a span.rotate {
+        /*Rotacion de flechas*/
+        transform: translateY(-50%) rotate(-180deg);
+    }
+
+    .cat-show li{
+        display: inline-block;
+        width: 120px;
+    }
+
+    /*----------------------------------------------------*/
+    /*-------------------BOTON BURGUER--------------------*/
+    /*----------------------------------------------------*/
+    .menu-btn {
+        position: relative;
+        top: -7px;
+        left: -20px;
+        display: flex;
+        justify-content: center;
+        width: 80px;
+        height: 40px;
         cursor: pointer;
-        padding: 0.5rem 1rem;
+        transition: all .5s ease-in-out;
+        background-attachment: fixed;
     }
 
-    .navigation{
-        width:100%;
-        margin-top: 1rem;
+    .menu-btn_burguer {
+        /*Linea media*/
+        width: 30px;
+        height: 6px;
+        margin-top: 30%;
+        background: black;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px cyan;
+        transition: all .5s ease-in-out;
     }
-        .navigation ul{
-            display: none;
-        }
 
-        .navigation ul.show{
-            display: block;
-        }
+    .menu-btn_burguer::before {
+        /*Linea inferior*/
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 6px;
+        background: black;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px cyan;
+        transition: all .5s ease-in-out;
+    }
 
-        .navigation ul li{
-            display: block;
-        }
-            .navigation ul li a{
-                display: inline-block;
-                padding: 0.5rem 0;
-                transition: all 0.4s linear;
-                border-radius: 5px;
-            }
-                .navigation ul li a:hover{
-                    background-color: rgba(255, 217, 0, 0.493);
-                }
+    .menu-btn_burguer::after {
+        /*Linea superior*/
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 6px;
+        background: black;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px cyan;
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn_burguer::before {
+        transform: translateY(-12px);
+    }
+
+    .menu-btn_burguer::after {
+        transform: translateY(12px);
+    }
+
+    /*-----------------ANIMACION BOTON BURGUER----------------*/
+    .menu-btn.open .menu-btn_burguer {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .menu-btn.open .menu-btn_burguer::before {
+        transform: rotate(45deg) translate(35px, -35px);
+        background: black;
+        margin-left: -67px;
+        width: 15px;
+        height: 5px;
+    }
+
+    .menu-btn.open .menu-btn_burguer::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+        background: black;
+        margin-left: -67px;
+        width: 15px;
+        height: 5px;
+    }
+
 }
-
 
 /* LOGIN HTML */
 
@@ -122,7 +504,8 @@ p{
     padding: 20px;
     text-align: center;
     color: whitesmoke;
-    margin-top: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .main_sesion{
@@ -165,11 +548,16 @@ p{
 
 .forgot-password{
     float: right;
-    color: rgba(255, 217, 0, 0.493);
 }
 
 .forgot{
     text-decoration: underline;
+    color: cyan;
+}
+
+.forgot:hover{
+    /* text-decoration: underline; */
+    color: white;
 }
 
 
@@ -189,12 +577,19 @@ p{
 }
 
 .botonInicio:hover{
-    background-color:rgba(255, 217, 0, 0.493);
+    background-color:rgba(0, 255, 255, 0.705);
+    color: white;
 }
 
 .form-registro a{
-    color: #b85635;
+    color: white;
+    text-decoration: center;
 }
+
+.form-registro a:hover{
+    color: cyan;
+}
+
 
 @media screen and (max-width:450px) {
     .main_sesion{

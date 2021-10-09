@@ -1,6 +1,0 @@
-# ignorar todos los archivos que terminen en .svg .png
-*.svg
-*.png
-*.jpg
-*.jpeg
-*.gif

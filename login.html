@@ -5,31 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous">
+    </script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
     <title>Document</title>
 </head>
 <body>
     <!--------CABECERA DEL SITIO WEB-->
     <header class="header">
-        <div class="container logo-nav-container">
-            <a href="" class="logo">LOGO</a>
-            <span class="menu-icon">Ver menú</span>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="marcas.html">Marcas</a></li>
-                    <li><a href="catalogo1.html">Catalogos</a></li>
-                    <li><a href="">Promociones</a></li>
-                    <li><a href="">Contactenos</a></li>
-                    <li><a href="">Acerca de</a></li>
-                </ul>
-            </nav>
+        <nav class="sidebar">
+            <div class="textlogo"><img class="logoST" src="imgs/logoTesoro2.JPG" alt="logoTesoro"></div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="marcas.html" class="marcas-btn">Marcas
+                        <!-- <span class="fas fa-sort-down first"></span></a> -->
+                        <!-- <ul class="marcas-show">
+                        <li><a href="#">Luis Buiton</a></li>
+                        <li><a href="#">Hermezz</a></li>
+                        <li><a href="#">BlueBerry</a></li>
+                        <li><a href="#">Shanel</a><li>
+                        <li><a href="#">Ralf laurin</a></li>
+                        <li><a href="#">Yioryio Armandi</a></li>
+                        <li><a href="#">Livais</a></li>
+                        <li><a href="#">Calbin clein</a>
+                    </ul> -->
+                </li>
+                <li><a href="#" class="cat-btn">Catalogo
+                        <span class="fas fa-sort-down second"></span></a>
+                    <ul class="cat-show">
+                        <li><a href="catalogo1.html">Ropa Hombres</a></li>
+                        <li><a href="">Ropa Mujeres</a></li>
+                        <li><a href="">Calzado Hombres</a></li>
+                        <li><a href="">Calzado Mujeres</a></li>
+                        <li><a href="">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Promociones</a></li>
+                <li><a href="">Contactenos</a></li>
+                <li class="acercaDe"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="menu-btn" id="menu-btn">
+            <div class="menu-btn_burguer"></div>
         </div>
-        <!-- <div class="textos">
-            <h1 class="titulo">Nuestras marcas Top</h1>
-            <h3 class="subtitulo">Ropa ecologica y realmente cómoda</h3>
-            <a href="#" class="boton">Compra ya!</a>
-        </div> -->
     </header>
+    <div class="titulo-container">
+        <h1 class="titulo">Tesoro</h1>
+    </div>
     <div class="form2">
         <form action="login.html">
             <div class="main_sesion">
@@ -60,18 +94,38 @@
                     <a href="#" class="botonInicio">Iniciar sesión</a>
                 </div>
                 <div class="form-registro">
-                    <p>¿No tienes una cuenta?</p>
+                    <!-- <p>¿No tienes una cuenta?</p> -->
                     <a href="registro.html" class="registro">Regístrate</a>
                 </div>
             </div>
         </form>
     </div>
     <footer class="footer">
-        <div class="container">
-            <p>Página diseñada por @SantoTesoro</p>
+        <div align="center" class="footer">
+            <hr>
+            <img src="../imgs/fb.svg" alt="" width="30px" height="30px"></img>
+            <img src="../imgs/instagram.svg" alt="" width="30px" height="30px"></img>
+            <img src="../imgs/tw.svg" alt="" width="30px" height="30px"></img>
+            <img src="../imgs/mail.svg" alt="" width="30px" height="30px"></img>
+            <p>Copyright 2021 | Página diseñada por @Tesoro | Todos los derechos reservados</p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/form3.js"></script>
+
+    <script>
+        $('.marcas-btn').click(function () {
+            $('nav ul .marcas-show').toggleClass("show");
+            $('nav ul li a .first').toggleClass("rotate");
+        });
+
+        $('.cat-btn').click(function () {
+            $('nav ul .cat-show').toggleClass("show");
+            $('nav ul li a .second').toggleClass("rotate");
+        });
+
+        $('.menu-btn').click(() => {
+            $('.menu-btn').toggleClass('open');
+            $('nav').toggleClass('show');
+        });
+    </script>
 </body>
 </html>

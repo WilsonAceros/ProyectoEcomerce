@@ -22,17 +22,31 @@ p {
     line-height: 1.3em;
 }
 
+
+.titulo{
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    /* position: absolute;
+    left: 70%;
+    top: 200px; */
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
 .videoVogue {
-    margin: 0 auto;
-    position: relative;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    /* position: relative;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    margin: auto;
-    max-width: 100%;
-    max-height: 100%;
-    width: 50%;
+    bottom: 0; */
+    /* margin: auto; */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    /* width: 70%; */
     margin-bottom: 50px;
 }
 
@@ -40,7 +54,7 @@ p {
     color: whitesmoke;
     max-width: 100%;
     height: 400px;
-    background-image: url(/imgs/img1.jpg);
+    background-image: url(/imgs/img2.jpg);
     background-attachment: fixed;
     background-position: 0 -250px;
     background-size: cover;
@@ -56,7 +70,7 @@ p {
 }
 
 .main {
-    height: 1400px;
+    /* height: 1600px; */
     width: 80%;
     margin: 0 auto;
     margin-top: 30px;
@@ -151,7 +165,7 @@ nav ul ul li {
 nav ul ul li a {
     font-size: 17px;
     color: #e6e6e6;
-    padding-left: 80px;
+    padding-left: 20px;
     border-left: #1b1b1b !important;
 }
 
@@ -167,6 +181,13 @@ nav ul li a span {
 nav ul li a span.rotate {
     transform: translateY(-50%) rotate(-180deg);
 }
+
+.cat-show li{
+    display: inline-block;
+    /* width: 170px; */
+
+}
+
 
 
 /*----------------------------------------------------*/
@@ -190,7 +211,7 @@ nav ul li a span.rotate {
     margin-top: 30%;
     background: black;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    box-shadow: 0 2px 5px cyan;
     transition: all .5s ease-in-out;
 }
 
@@ -201,7 +222,7 @@ nav ul li a span.rotate {
     height: 6px;
     background: black;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    box-shadow: 0 2px 5px cyan;
     transition: all .5s ease-in-out;
 }
 
@@ -212,7 +233,7 @@ nav ul li a span.rotate {
     height: 6px;
     background: black;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    box-shadow: 0 2px 5px cyan;
     transition: all .5s ease-in-out;
 }
 
@@ -277,7 +298,7 @@ img {
 .footer p {
     text-align: center;
     margin-top: 1rem;
-    color: black;
+    color: whitesmoke;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
@@ -288,8 +309,8 @@ img {
 
 @media only screen and (max-width:767px) {
     .header {
-        color: whitesmoke;
-        max-width: 100%;
+        /* color: whitesmoke; */
+        /* max-width: 100%; */
         height: 200px;
         /* background-image: url(/imgs/clothes.jpg);
         background-attachment: fixed;
@@ -305,35 +326,35 @@ img {
 
     /*-----------------------SIDERBAR--------------------*/
     .sidebar {
-        position: absolute;
+        /* position: absolute; */
         width: 150px;
-        left: 0;
-        height: 100%;
+        /* left: 0; */
+        /* height: 100%; */
         background-color: black;
-        transform: translate(-520px);
-        transition: transform 1s;
-        z-index: 999;
+        /* transform: translate(-520px); */
+        /* transition: transform 1s; */
+        /* z-index: 999; */
     }
 
     .sidebar .textlogo {
-        color: white;
+        /* color: white; */
         font-size: 15px;
         margin: auto;
-        font-weight: 600;
+        /* font-weight: 600; */
         line-height: 50px;
-        text-align: center;
-        background: black;
+        /* text-align: center; */
+        /* background: black; */
     }
 
-    .sidebar.show {
+    /* .sidebar.show {
         transform: translate(0px);
         transition: transform 0.7s;
-    }
+    } */
 
     .sidebar .textlogo a {
-        text-decoration: none;
-        list-style: none;
-        color: white;
+        /* text-decoration: none; */
+        /* list-style: none; */
+        /* color: white; */
         margin: 0 auto;
         padding: auto;
         letter-spacing: 0.8em;
@@ -341,76 +362,80 @@ img {
     }
 
     nav ul {
-        background: #1b1b1b;
+        /* background: #1b1b1b; */
         height: 100%;
-        width: 100%;
-        list-style: none;
+        /* width: 100%; */
+        /* list-style: none; */
     }
 
-    nav ul .marcas-show.show {
+    /* nav ul .marcas-show.show {
         display: block;
-    }
+    } */
 
-    nav ul .cat-show.show {
+    /* nav ul .cat-show.show {
         display: block;
-    }
+    } */
 
     nav ul li {
         line-height: 35px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 
     }
 
     nav ul li a {
-        position: relative;
-        color: white;
-        text-decoration: none;
+        /* position: relative; */
+        /* color: white; */
+        /* text-decoration: none; */
         font-size: 13px;
         padding-left: 20px;
-        font-weight: 500;
-        display: block;
-        width: 100%;
+        /* font-weight: 500; */
+        /* display: block; */
+        /* width: 100%; */
         border-left: 1.5px solid transparent;
     }
 
     nav ul li a:hover {
-        color: cyan;
-        background: #1e1e1e;
+        /* color: cyan; */
+        /* background: #1e1e1e; */
         border-left: 3px solid cyan;
     }
-
+/* 
     nav ul ul {
         position: static;
         display: none;
-    }
+    } */
 
     nav ul ul li {
         line-height: 35px;
-        border-bottom: none;
+        /* border-bottom: none; */
     }
 
     nav ul ul li a {
         font-size: 12px;
-        color: #e6e6e6;
-        padding-left: 40px;
-        border-left: #1b1b1b !important;
+        /* color: #e6e6e6; */
+        padding-left: 10px;
+        /* border-left: #1b1b1b !important; */
     }
 
     nav ul li a span {
         /*--Flechas--*/
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
+        /* position: absolute; */
+        /* top: 50%; */
+        /* right: 20px; */
+        /* transform: translateY(-50%); */
         font-size: 15px;
-        transition: transform 0.2s;
+        /* transition: transform 0.2s; */
     }
 
-    nav ul li a span.rotate {
+    /* nav ul li a span.rotate { */
         /*Rotacion de flechas*/
-        transform: translateY(-50%) rotate(-180deg);
-    }
+        /* transform: translateY(-50%) rotate(-180deg); */
+    /* } */
 
+    .cat-show li{
+        display: inline-block;
+        width: 120px;
+    }
     /*----------------------------------------------------*/
     /*-------------------BOTON BURGUER--------------------*/
     /*----------------------------------------------------*/
@@ -434,7 +459,7 @@ img {
         margin-top: 30%;
         background: black;
         border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        box-shadow: 0 2px 5px cyan;
         transition: all .5s ease-in-out;
     }
 
@@ -446,7 +471,7 @@ img {
         height: 6px;
         background: black;
         border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        box-shadow: 0 2px 5px cyan;
         transition: all .5s ease-in-out;
     }
 
@@ -458,7 +483,7 @@ img {
         height: 6px;
         background: black;
         border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        box-shadow: 0 2px 5px cyan;
         transition: all .5s ease-in-out;
     }
 
@@ -491,6 +516,46 @@ img {
         margin-left: -67px;
         width: 15px;
         height: 5px;
+    }
+
+    #img1 {
+        height: 450px !important;
+    }
+
+    .videoVogue iframe{
+        /* margin: 0 auto; */
+        /* position: relative; */
+        /* top: 0; */
+        /* left: 0; */
+        /* right: 0; */
+        /* bottom: 0; */
+        /* margin: auto; */
+        /* max-width: 100%; */
+        /* max-height: 100%; */
+        transform: scale(0.9);
+        /* width: 100%; */
+        /* margin-bottom: 50px; */
+    }
+
+
+}
+
+
+@media screen and (max-width:500px) {
+
+    .videoVogue iframe{
+        /* margin: 0 auto; */
+        /* position: relative; */
+        /* top: 0; */
+        /* left: 0; */
+        /* right: 0; */
+        /* bottom: 0; */
+        /* margin: auto; */
+        /* max-width: 100%; */
+        /* max-height: 100%; */
+        transform: scale(0.7);
+        /* width: 100%; */
+        /* margin-bottom: 50px; */
     }
 
 }

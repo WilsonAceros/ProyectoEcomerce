@@ -127,7 +127,7 @@ nav ul ul{
         nav ul ul li a{
             font-size: 17px;
             color: #e6e6e6;
-            padding-left: 80px;
+            padding-left: 20px;
             border-left: #1b1b1b !important;
         }
             nav ul li a span{
@@ -163,7 +163,7 @@ nav ul ul{
     margin-top: 30%;
     background: black;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    box-shadow: 0 2px 5px cyan;
     transition: all .5s ease-in-out;
 }
 .menu-btn_burguer::before{
@@ -173,7 +173,7 @@ nav ul ul{
     height: 6px;
     background: black;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    box-shadow: 0 2px 5px cyan;
     transition: all .5s ease-in-out;
 }
 .menu-btn_burguer::after{
@@ -183,7 +183,7 @@ nav ul ul{
     height: 6px;
     background: black;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    box-shadow: 0 2px 5px cyan;
     transition: all .5s ease-in-out;
 }
 .menu-btn_burguer::before{
@@ -231,7 +231,7 @@ nav ul ul{
 .textos{
     margin-top:150px;
     text-align: center;
-    color: white;
+    color: antiquewhite;
 
 }
 
@@ -255,6 +255,7 @@ nav ul ul{
     text-decoration: none;
     font-size: 20px;
     border-radius: 15px;
+    transition: all 0.4s linear;
 }
 
 .boton:hover{
@@ -320,7 +321,7 @@ section div h4{
 
 section div h4 a{
     text-decoration: none;
-    color: whitesmoke;
+    color: antiquewhite;
 }
 
 section div h4 a:hover{
@@ -332,11 +333,11 @@ section div h3 span{
 }
 
 section div h3{
-    color: whitesmoke;
+    color: antiquewhite
 }
 
 section div p{
-    color: whitesmoke;
+    color: antiquewhite;
 }
 
 .footer {
@@ -348,7 +349,7 @@ section div p{
 .footer p {
     text-align: center;
     margin-top: 1rem;
-    color: black;
+    color: whitesmoke;
 }
 
 @media screen and (max-width:1000px) and (min-width: 768px) {
@@ -463,7 +464,7 @@ section div p{
             nav ul ul li a{
                 font-size: 12px;
                 color: #e6e6e6;
-                padding-left: 40px;
+                padding-left: 10px;
                 border-left: #1b1b1b !important;
             }
                 nav ul li a span{/*--Flechas--*/
@@ -477,7 +478,10 @@ section div p{
                     nav ul li a span.rotate{/*Rotacion de flechas*/
                         transform: translateY(-50%) rotate(-180deg);
                     }
-        
+                    .cat-show li{
+                        display: inline-block;
+                        width: 120px;
+                    }
     /*----------------------------------------------------*/
     /*-------------------BOTON BURGUER--------------------*/
     /*----------------------------------------------------*/
@@ -499,7 +503,7 @@ section div p{
             margin-top: 30%;
             background: black;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+            box-shadow: 0 2px 5px cyan;
             transition: all .5s ease-in-out;
         }
             .menu-btn_burguer::before{/*Linea inferior*/
@@ -509,7 +513,7 @@ section div p{
                 height: 6px;
                 background: black;
                 border-radius: 5px;
-                box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+                box-shadow: 0 2px 5px cyan;
                 transition: all .5s ease-in-out;
             }
             .menu-btn_burguer::after{/*Linea superior*/
@@ -519,7 +523,7 @@ section div p{
                 height: 6px;
                 background: black;
                 border-radius: 5px;
-                box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+                box-shadow: 0 2px 5px cyan;
                 transition: all .5s ease-in-out;
             }
             .menu-btn_burguer::before{
