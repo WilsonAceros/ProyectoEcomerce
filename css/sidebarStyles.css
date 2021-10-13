@@ -205,6 +205,7 @@ nav ul li a span.rotate {
     background-attachment: fixed;
 }
 
+
 .menu-btn_burguer {
     width: 30px;
     height: 6px;
@@ -287,6 +288,20 @@ img {
 
 .carousel-item p {
     text-align: center;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: white;
+    border-color: 10px solid cyan;
+}
+
+.carousel-item h5 {
+    text-align: center;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: white;
+    border-color: 10px solid cyan;
 }
 
 .footer {

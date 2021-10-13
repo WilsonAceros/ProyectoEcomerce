@@ -1,0 +1,22 @@
+{
+  "name": "proyectoecomerce",
+  "version": "1.0.0",
+  "description": "Servidor ExpressJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilsonAceros/ProyectoEcomerce.git"
+  },
+  "author": "Wilson Aceros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilsonAceros/ProyectoEcomerce/issues"
+  },
+  "homepage": "https://github.com/WilsonAceros/ProyectoEcomerce#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

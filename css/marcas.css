@@ -12,6 +12,7 @@ body{
 .acercaDe{
     border-bottom: 1px  solid transparent !important;
 }
+
 p{
     text-align: justify;
     font-size: 16px;
@@ -157,13 +158,30 @@ nav ul ul{
     transition: all .5s ease-in-out;
     background-attachment: fixed;
 }
+
+.menu-btn p{
+    color: cyan;
+    position: relative;
+    left: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    transition: all .5s ease-in-out;
+    background-attachment: fixed;
+}
+
+.menu1{
+    border-color: 5px solid aqua;
+}
+
+
 .menu-btn_burguer{
     width: 30px;
     height: 6px;
     margin-top: 30%;
-    background: black;
+    background: cyan;
     border-radius: 5px;
-    box-shadow: 0 2px 5px cyan;
+    box-shadow: 0 2px 5px black;
     transition: all .5s ease-in-out;
 }
 .menu-btn_burguer::before{
@@ -171,9 +189,9 @@ nav ul ul{
     position: absolute;
     width: 50px;
     height: 6px;
-    background: black;
+    background: cyan;
     border-radius: 5px;
-    box-shadow: 0 2px 5px cyan;
+    box-shadow: 0 2px 5px black;
     transition: all .5s ease-in-out;
 }
 .menu-btn_burguer::after{
@@ -181,9 +199,9 @@ nav ul ul{
     position: absolute;
     width: 50px;
     height: 6px;
-    background: black;
+    background: cyan;
     border-radius: 5px;
-    box-shadow: 0 2px 5px cyan;
+    box-shadow: 0 2px 5px black;
     transition: all .5s ease-in-out;
 }
 .menu-btn_burguer::before{
@@ -485,6 +503,8 @@ section div p{
     /*----------------------------------------------------*/
     /*-------------------BOTON BURGUER--------------------*/
     /*----------------------------------------------------*/
+
+
     .menu-btn{
         position: relative;
         top: -7px;
@@ -561,4 +581,7 @@ section div p{
         font-size: 20px;
     }
 
+    .menu1{
+        display: none;
+    }
 }

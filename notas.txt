@@ -1,4 +1,4 @@
-ResaLtar mas el menu, poner MENU, para ser mas intituivo
+Resaltar mas el menu, poner MENU, para ser mas intituivo
 Buscar animaciòn cambio de imagen que no sea con el hover sino con click.
 Ampliar el video al mismo ancho del carrusel.
 Amplair letra del carrusel y color
