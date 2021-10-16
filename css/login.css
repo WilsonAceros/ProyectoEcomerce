@@ -60,6 +60,7 @@ p {
     color: antiquewhite;
 }
 
+
 .sidebar {
     position: absolute;
     width: 220px;
@@ -96,6 +97,7 @@ nav ul {
     width: 100%;
     list-style: none;
     z-index: 999;
+    padding-left: 0px;
 }
 
 nav ul .marcas-show.show {
@@ -142,7 +144,7 @@ nav ul ul li {
 nav ul ul li a {
     font-size: 17px;
     color: #e6e6e6;
-    padding-left: 20px;
+    padding-left: 60px;
     border-left: #1b1b1b !important;
 }
 
@@ -186,7 +188,7 @@ nav ul li a span.rotate {
     width: 30px;
     height: 6px;
     margin-top: 30%;
-    background: black;
+    background: cyan;
     border-radius: 5px;
     box-shadow: 0 2px 5px cyan;
     transition: all .5s ease-in-out;
@@ -197,7 +199,7 @@ nav ul li a span.rotate {
     position: absolute;
     width: 50px;
     height: 6px;
-    background: black;
+    background: cyan;
     border-radius: 5px;
     box-shadow: 0 2px 5px cyan;
     transition: all .5s ease-in-out;
@@ -208,7 +210,7 @@ nav ul li a span.rotate {
     position: absolute;
     width: 50px;
     height: 6px;
-    background: black;
+    background: cyan;
     border-radius: 5px;
     box-shadow: 0 2px 5px cyan;
     transition: all .5s ease-in-out;
@@ -504,8 +506,14 @@ img {
     padding: 20px;
     text-align: center;
     color: whitesmoke;
+    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    border: 3px solid whitesmoke;
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
 }
 
 .main_sesion{

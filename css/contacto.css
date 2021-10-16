@@ -1,0 +1,84 @@
+.main-contact{
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    color: antiquewhite;
+}
+
+.form-contact{
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+    margin: 50px auto 50px;
+    border: 3px solid whitesmoke;
+    border-radius: 5%;
+    width: 600px;
+    height: 550px;
+    /* box-shadow: 5px 5px 5px cyan, -5px -5px 5px cyan, 5px -5px 5px cyan, -5px 5px 5px cyan; */
+}
+
+.main_contact h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.name_contact{
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.email_contact{
+    position: relative;
+    display:flex;
+    margin-bottom: 30px;
+}
+
+.mensaje_contact{
+    position: relative;
+    display:flex;
+    margin-bottom: 30px;
+}
+
+#mensaje{
+    width: 530px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.boton_contact{
+    padding: 10px;
+    margin: 0px 10px 0px 20px;
+    text-decoration: none;
+    float: right;
+    width: 120px;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-color:black;
+    transition: all 0.4s linear;
+}
+
+.boton_contact:hover{
+    background-color: cyan;
+    color: black;
+}
+
+#nom_ape_mail{
+    width: 250px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width:767px){
+
+    .main-contact{
+        /* margin: 0 auto; */
+        transform: scale(0.8);
+    }
+
+
+}

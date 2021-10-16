@@ -23,7 +23,7 @@ p {
 }
 
 
-.titulo{
+.titulo {
     font-style: oblique;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 100px;
@@ -119,6 +119,7 @@ nav ul {
     width: 100%;
     list-style: none;
     z-index: 999;
+    padding-left: 0px;
 }
 
 nav ul .marcas-show.show {
@@ -165,7 +166,7 @@ nav ul ul li {
 nav ul ul li a {
     font-size: 17px;
     color: #e6e6e6;
-    padding-left: 20px;
+    padding-left: 60px;
     border-left: #1b1b1b !important;
 }
 
@@ -182,7 +183,7 @@ nav ul li a span.rotate {
     transform: translateY(-50%) rotate(-180deg);
 }
 
-.cat-show li{
+.cat-show li {
     display: inline-block;
     /* width: 170px; */
 
@@ -209,7 +210,7 @@ nav ul li a span.rotate {
     width: 30px;
     height: 6px;
     margin-top: 30%;
-    background: black;
+    background: cyan;
     border-radius: 5px;
     box-shadow: 0 2px 5px cyan;
     transition: all .5s ease-in-out;
@@ -220,7 +221,7 @@ nav ul li a span.rotate {
     position: absolute;
     width: 50px;
     height: 6px;
-    background: black;
+    background: cyan;
     border-radius: 5px;
     box-shadow: 0 2px 5px cyan;
     transition: all .5s ease-in-out;
@@ -231,7 +232,7 @@ nav ul li a span.rotate {
     position: absolute;
     width: 50px;
     height: 6px;
-    background: black;
+    background: cyan;
     border-radius: 5px;
     box-shadow: 0 2px 5px cyan;
     transition: all .5s ease-in-out;
@@ -399,7 +400,8 @@ img {
         /* background: #1e1e1e; */
         border-left: 3px solid cyan;
     }
-/* 
+
+    /* 
     nav ul ul {
         position: static;
         display: none;
@@ -428,14 +430,15 @@ img {
     }
 
     /* nav ul li a span.rotate { */
-        /*Rotacion de flechas*/
-        /* transform: translateY(-50%) rotate(-180deg); */
+    /*Rotacion de flechas*/
+    /* transform: translateY(-50%) rotate(-180deg); */
     /* } */
 
-    .cat-show li{
+    .cat-show li {
         display: inline-block;
         width: 120px;
     }
+
     /*----------------------------------------------------*/
     /*-------------------BOTON BURGUER--------------------*/
     /*----------------------------------------------------*/
@@ -522,7 +525,7 @@ img {
         height: 450px !important;
     }
 
-    .videoVogue iframe{
+    .videoVogue iframe {
         /* margin: 0 auto; */
         /* position: relative; */
         /* top: 0; */
@@ -543,7 +546,7 @@ img {
 
 @media screen and (max-width:500px) {
 
-    .videoVogue iframe{
+    .videoVogue iframe {
         /* margin: 0 auto; */
         /* position: relative; */
         /* top: 0; */
@@ -561,19 +564,19 @@ img {
 }
 
 /* GRID */
-.grid{
+.grid {
     width: 90%;
     margin: 60px auto;
     display: grid;
     gap: 60px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2,auto);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas: "pr1 pr2 pr3 pr4"
-                            "pr5 pr6 pr7 pr8"
+        "pr5 pr6 pr7 pr8"
 }
 
 
-@keyframes cambioColor2 {
+/* @keyframes cambioColor2 {
     0%{
         background-image: url(/imgs/shop-2.jpg);
         background-size: cover;
@@ -584,53 +587,94 @@ img {
         background-size: cover;
         overflow: hidden;
     }
-}
+} */
 
 
-.product-image2{
+/* .product-image2{
     width: 200px;
     height: 300px;
-    /* background-color: gray; */
     margin: auto;
-    /* margin-top: 50px; */
     border-radius: 10px;
     animation: cambioColor2 2s ease infinite normal forwards paused;
-    /* animation-iteration-count: 1; */
-}
+} */
 
-.product-image2:hover{
+/* .product-image2:hover{
     animation-play-state: running;
+} */
+
+.product-image1,
+.product-image2,
+.product-image3,
+.product-image4,
+.product-image5,
+.product-image6,
+.product-image7,
+.product-image8 {
+    display: flex;
+    justify-content: center;
 }
 
 
 
-@keyframes cambioColor1 {
-    0%{
-        background-image: url(/imgs/shop-1.jpg);
-        background-size: cover;
-        overflow: hidden;
-    }
-    100%{
-        background-image: url(/imgs/shop-11.jpg);
-        background-size: cover;
-        overflow: hidden;
-    }
-}
-
-
-.product-image1{
+#img {
     width: 200px;
     height: 300px;
-    /* background-color: gray; */
-    margin: auto;
+    margin: 0 auto;
+    transition: all 0.5s;
     border-radius: 10px;
-    /* margin-top: 50px; */
-    animation: cambioColor1 2s ease infinite normal forwards paused;
 }
 
-.product-image1:hover{
-    animation-play-state: running;
+#img:hover {
+    transform: scale(1.1);
 }
+
+.btn_animated {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_animated.animate {
+    -webkit-animation: jello-horizontal 0.5s both;
+    animation: jello-horizontal 0.5s both;
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
 
 .product-content button {
     background-color: rgba(255, 255, 255, 0.226);
@@ -638,15 +682,13 @@ img {
     border-radius: 5px;
     margin-left: 10px;
     padding: 5px;
-    /* display: flex; */
 }
 
 .product-content button:hover {
-    /* background-color: rgba(255, 255, 255, 0.226); */
     color: cyan;
 }
 
-@keyframes cambioColor3 {
+/* @keyframes cambioColor3 {
     0%{
         background-image: url(/imgs/shop-3.jpg);
         background-size: cover;
@@ -657,25 +699,23 @@ img {
         background-size: cover;
         overflow: hidden;
     }
-}
+} */
 
 
-.product-image3{
+/* .product-image3{
     width: 200px;
     height: 300px;
-    /* background-color: gray; */
     margin: auto;
-    /* margin-top: 50px; */
     border-radius: 10px;
     animation: cambioColor3 2s ease infinite normal forwards paused;
-}
+} */
 
-.product-image3:hover{
+/* .product-image3:hover{
     animation-play-state: running;
-}
+} */
 
 
-@keyframes cambioColor4 {
+/* @keyframes cambioColor4 {
     0%{
         background-image: url(/imgs/shop-4.jpg);
         background-size: cover;
@@ -686,24 +726,22 @@ img {
         background-size: cover;
         overflow: hidden;
     }
-}
+} */
 
 
-.product-image4{
+/* .product-image4{
     width: 200px;
     height: 300px;
-    /* background-color: gray; */
     margin: auto;
-    /* margin-top: 50px; */
     border-radius: 10px;
     animation: cambioColor4 2s ease infinite normal forwards paused;
-}
+} */
 
-.product-image4:hover{
+/* .product-image4:hover{
     animation-play-state: running;
-}
+} */
 
-@keyframes cambioColor5 {
+/* @keyframes cambioColor5 {
     0%{
         background-image: url(/imgs/shop-5.jpg);
         background-size: cover;
@@ -714,25 +752,23 @@ img {
         background-size: cover;
         overflow: hidden;
     }
-}
+} */
 
 
-.product-image5{
+/* .product-image5{
     width: 200px;
     height: 300px;
-    /* background-color: gray; */
     margin: auto;
-    /* margin-top: 50px; */
     border-radius: 10px;
     animation: cambioColor5 2s ease infinite normal forwards paused;
-}
+} */
 
-.product-image5:hover{
+/* .product-image5:hover{
     animation-play-state: running;
-}
+} */
 
 
-@keyframes cambioColor6 {
+/* @keyframes cambioColor6 {
     0%{
         background-image: url(/imgs/shop-6.jpg);
         background-size: cover;
@@ -743,25 +779,23 @@ img {
         background-size: cover;
         overflow: hidden;
     }
-}
+} */
 
 
-.product-image6{
+/* .product-image6{
     width: 200px;
     height: 300px;
-    /* background-color: gray; */
     margin: auto;
-    /* margin-top: 50px; */
     border-radius: 10px;
     animation: cambioColor6 2s ease infinite normal forwards paused;
-}
+} */
 
-.product-image6:hover{
+/* .product-image6:hover{
     animation-play-state: running;
-}
+} */
 
 
-@keyframes cambioColor7 {
+/* @keyframes cambioColor7 {
     0%{
         background-image: url(/imgs/shop-7.jpg);
         background-size: cover;
@@ -772,25 +806,23 @@ img {
         background-size: cover;
         overflow: hidden;
     }
-}
+} */
 
 
-.product-image7{
+/* .product-image7{
     width: 200px;
     height: 300px;
-    /* background-color: gray; */
     margin: auto;
-    /* margin-top: 50px; */
     border-radius: 10px;
     animation: cambioColor7 2s ease infinite normal forwards paused;
-}
+} */
 
-.product-image7:hover{
+/* .product-image7:hover{
     animation-play-state: running;
-}
+} */
 
 
-@keyframes cambioColor8 {
+/* @keyframes cambioColor8 {
     0%{
         background-image: url(/imgs/shop-8.jpg);
         background-size: cover;
@@ -801,22 +833,20 @@ img {
         background-size: cover;
         overflow: hidden;
     }
-}
+} */
 
 
-.product-image8{
+/* .product-image8{
     width: 200px;
     height: 300px;
-    /* background-color: gray; */
     margin: auto;
-    /* margin-top: 50px; */
     border-radius: 10px;
     animation: cambioColor8 2s ease infinite normal forwards paused;
-}
+} */
 
-.product-image8:hover{
+/* .product-image8:hover{
     animation-play-state: running;
-}
+} */
 
 .product-content {
     color: whitesmoke;
@@ -825,74 +855,53 @@ img {
 
 }
 
-.product-content a{
+.product-content a {
     color: whitesmoke;
     text-decoration: none;
 
 }
 
-.product-content a:hover{
+.product-content a:hover {
     color: cyan;
 
 }
 
-.product-content del{
+.product-content del {
     margin-right: 10px;
 
 }
-@media screen and (max-width: 767px){
 
-    .grid{
+@media screen and (max-width: 767px) {
+
+    .grid {
         width: 90%;
         margin: 30px auto;
         display: grid;
         gap: 50px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4,auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-areas: "pr1 pr2"
-                                "pr3 pr4"
-                                "pr5 pr6"
-                                "pr7 pr8"
+            "pr3 pr4"
+            "pr5 pr6"
+            "pr7 pr8"
     }
 
-    .product-image1{
+    #img {
         width: 150px;
         height: 250px;
+
     }
 
-    .product-image2{
-        width: 150px;
-        height: 250px;
-    }
-
-    .product-image3{
-        width: 150px;
-        height: 250px;
-    }
-
-    .product-image4{
-        width: 150px;
-        height: 250px;
-    }
-
-    .product-image5{
-        width: 150px;
-        height: 250px;
-    }
-
-    .product-image6{
-        width: 150px;
-        height: 250px;
-    }
-
-    .product-image7{
-        width: 150px;
-        height: 250px;
-    }
-
-    .product-image8{
-        width: 150px;
-        height: 250px;
+    .product-image1,
+    .product-image2,
+    .product-image3,
+    .product-image4,
+    .product-image5,
+    .product-image6,
+    .product-image7,
+    .product-image8 {
+        display: flex;
+        justify-content: center;
     }
 
 
